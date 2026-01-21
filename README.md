@@ -24,7 +24,74 @@ docker run -d --rm --name trakt_mcpserver \
   ghcr.io/wwiens/trakt_mcpserver:latest
 ```
 
-### Local Installation
+### pipx Installation (Recommended)
+
+**pipx** is Python's equivalent to `npx` - it lets you install and run Python applications in isolated environments.
+
+1. **Install pipx** (if not already installed)
+   ```bash
+   # macOS
+   brew install pipx
+   pipx ensurepath
+   
+   # Linux
+   python3 -m pip install --user pipx
+   python3 -m pipx ensurepath
+   
+   # Windows
+   py -m pip install --user pipx
+   py -m pipx ensurepath
+   ```
+
+2. **Install from local directory**
+   ```bash
+   # Clone the repository
+   git clone https://github.com/yourusername/mcp-trakt.git
+   cd mcp-trakt
+   
+   # Install with pipx
+   pipx install .
+   
+   # Set your credentials
+   export TRAKT_CLIENT_ID=your_client_id
+   export TRAKT_CLIENT_SECRET=your_client_secret
+   
+   # Run the server
+   trakt-mcp
+   ```
+
+3. **Or run directly without installing**
+   ```bash
+   cd mcp-trakt
+   export TRAKT_CLIENT_ID=your_client_id
+   export TRAKT_CLIENT_SECRET=your_client_secret
+   pipx run --spec . trakt-mcp
+   ```
+
+4. **Or install and run directly from GitHub**
+   ```bash
+   pipx run git+https://github.com/garrettheath4/cloudstorage-mcp.git
+   ```
+
+5. **Once published to PyPI** (coming soon)
+   ```bash
+   # Install directly
+   pipx install trakt-mcp-server
+   
+   # Or run without installing
+   pipx run trakt-mcp-server
+   ```
+
+**Using with uv/uvx** (faster alternative):
+```bash
+# Run directly with uvx
+uvx --from . trakt-mcp
+
+# Or install with uv
+uv tool install .
+```
+
+### Local Installation (Traditional pip)
 
 1. **Clone this repository**
    ```bash
@@ -53,7 +120,23 @@ docker run -d --rm --name trakt_mcpserver \
    ```
 
 ### Installing in Claude Desktop
-Add to your Claude Desktop MCP configuration file:
+
+**Using pipx (recommended):**
+```json
+{
+  "mcpServers": {
+    "trakt": {
+      "command": "trakt-mcp",
+      "env": {
+        "TRAKT_CLIENT_ID": "your_client_id",
+        "TRAKT_CLIENT_SECRET": "your_client_secret"
+      }
+    }
+  }
+}
+```
+
+**Using Python directly:**
 ```json
 {
   "mcpServers": {
