@@ -7,8 +7,8 @@ from typing import TYPE_CHECKING
 import pytest
 from pydantic import ValidationError
 
-from models.movies import TraktMovie, TraktPopularMovie, TraktTrendingMovie
-from models.shows import TraktEpisode, TraktPopularShow, TraktShow, TraktTrendingShow
+from trakt_mcp_server.models.movies import TraktMovie, TraktPopularMovie, TraktTrendingMovie
+from trakt_mcp_server.models.shows import TraktEpisode, TraktPopularShow, TraktShow, TraktTrendingShow
 
 if TYPE_CHECKING:
     from typing import TypedDict

@@ -5,7 +5,7 @@ from typing import Any
 import pytest
 from pydantic import ValidationError
 
-from server.sync.tools import UserRatingIdentifier
+from trakt_mcp_server.server.sync.tools import UserRatingIdentifier
 
 
 class TestUserRatingIdentifierValidation:

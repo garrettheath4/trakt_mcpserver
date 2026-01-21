@@ -2,7 +2,7 @@
 
 from typing import TYPE_CHECKING, cast
 
-from models.formatters.shows import ShowFormatters
+from trakt_mcp_server.models.formatters.shows import ShowFormatters
 
 if TYPE_CHECKING:
     from models.types import ShowResponse, TrendingWrapper

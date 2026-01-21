@@ -2,7 +2,7 @@
 
 from typing import TYPE_CHECKING, cast
 
-from models.formatters.checkin import CheckinFormatters
+from trakt_mcp_server.models.formatters.checkin import CheckinFormatters
 
 if TYPE_CHECKING:
     from models.types import CheckinResponse

@@ -3,7 +3,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-from client.search import SearchClient
+from trakt_mcp_server.client.search import SearchClient
 
 
 @pytest.mark.asyncio

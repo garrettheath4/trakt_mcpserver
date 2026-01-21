@@ -3,7 +3,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-from client.comments import CommentsClient
+from trakt_mcp_server.client.comments import CommentsClient
 
 
 @pytest.mark.asyncio

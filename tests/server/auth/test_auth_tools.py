@@ -9,9 +9,9 @@ import pytest
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
-from models.auth.auth import TraktAuthToken, TraktDeviceCode
-from server.auth.tools import check_auth_status, clear_auth, start_device_auth
-from utils.api.error_types import AuthorizationPendingError
+from trakt_mcp_server.models.auth.auth import TraktAuthToken, TraktDeviceCode
+from trakt_mcp_server.server.auth.tools import check_auth_status, clear_auth, start_device_auth
+from trakt_mcp_server.utils.api.error_types import AuthorizationPendingError
 
 
 @pytest.mark.asyncio

@@ -4,7 +4,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import httpx
 import pytest
 
-from client.shows import ShowsClient
+from trakt_mcp_server.client.shows import ShowsClient
 
 
 @pytest.mark.asyncio

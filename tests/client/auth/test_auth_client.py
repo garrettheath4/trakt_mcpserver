@@ -7,10 +7,10 @@ import httpx
 import pytest
 from _pytest.logging import LogCaptureFixture
 
-from client.auth import AuthClient
-from models.auth import TraktAuthToken, TraktDeviceCode
-from utils.api.error_types import TraktResourceNotFoundError
-from utils.api.errors import handle_api_errors_func
+from trakt_mcp_server.client.auth import AuthClient
+from trakt_mcp_server.models.auth import TraktAuthToken, TraktDeviceCode
+from trakt_mcp_server.utils.api.error_types import TraktResourceNotFoundError
+from trakt_mcp_server.utils.api.errors import handle_api_errors_func
 
 
 @pytest.mark.asyncio

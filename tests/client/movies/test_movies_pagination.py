@@ -4,10 +4,10 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from client.movies.popular import PopularMoviesClient
-from client.movies.stats import MovieStatsClient
-from client.movies.trending import TrendingMoviesClient
-from models.types.pagination import PaginatedResponse
+from trakt_mcp_server.client.movies.popular import PopularMoviesClient
+from trakt_mcp_server.client.movies.stats import MovieStatsClient
+from trakt_mcp_server.client.movies.trending import TrendingMoviesClient
+from trakt_mcp_server.models.types.pagination import PaginatedResponse
 
 
 @pytest.mark.asyncio

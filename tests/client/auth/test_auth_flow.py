@@ -5,10 +5,10 @@ from unittest.mock import AsyncMock, MagicMock, mock_open, patch
 import httpx
 import pytest
 
-from client.auth import AuthClient
-from models.auth import TraktAuthToken, TraktDeviceCode
-from utils.api.error_types import AuthorizationPendingError
-from utils.api.errors import InvalidParamsError
+from trakt_mcp_server.client.auth import AuthClient
+from trakt_mcp_server.models.auth import TraktAuthToken, TraktDeviceCode
+from trakt_mcp_server.utils.api.error_types import AuthorizationPendingError
+from trakt_mcp_server.utils.api.errors import InvalidParamsError
 
 
 @pytest.mark.asyncio

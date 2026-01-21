@@ -5,12 +5,12 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-from client.comments.details import CommentDetailsClient
-from client.comments.episode import EpisodeCommentsClient
-from client.comments.movie import MovieCommentsClient
-from client.comments.season import SeasonCommentsClient
-from client.comments.show import ShowCommentsClient
-from models.types.pagination import PaginatedResponse
+from trakt_mcp_server.client.comments.details import CommentDetailsClient
+from trakt_mcp_server.client.comments.episode import EpisodeCommentsClient
+from trakt_mcp_server.client.comments.movie import MovieCommentsClient
+from trakt_mcp_server.client.comments.season import SeasonCommentsClient
+from trakt_mcp_server.client.comments.show import ShowCommentsClient
+from trakt_mcp_server.models.types.pagination import PaginatedResponse
 
 
 def _make_httpx_mock(*responses: MagicMock) -> MagicMock:

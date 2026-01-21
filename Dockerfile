@@ -18,8 +18,8 @@ WORKDIR /app/trakt_mcpserver
 # Copy project (everything except what's in .dockerignore)
 COPY . .
 
-# Install Python dependencies
-RUN pip3 install --no-cache-dir -r requirements.txt
+# Install the package (includes dependencies from pyproject.toml)
+RUN pip3 install --no-cache-dir .
 
 # Back to root workdir
 WORKDIR /app
@@ -42,4 +42,4 @@ USER appuser
 # --pass-environment forwards TRAKT_* vars to the child process
 # `--` separates proxy args from child args
 ENTRYPOINT ["mcp-proxy"]
-CMD ["--host", "0.0.0.0", "--port", "8080", "--pass-environment", "--", "python3", "/app/trakt_mcpserver/server.py"]
+CMD ["--host", "0.0.0.0", "--port", "8080", "--pass-environment", "--", "trakt-mcp"]

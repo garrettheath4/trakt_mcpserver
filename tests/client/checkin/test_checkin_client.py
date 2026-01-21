@@ -4,8 +4,8 @@ from unittest.mock import AsyncMock, Mock, patch
 
 import pytest
 
-from client.checkin import CheckinClient
-from models.auth import TraktAuthToken
+from trakt_mcp_server.client.checkin import CheckinClient
+from trakt_mcp_server.models.auth import TraktAuthToken
 
 
 @pytest.mark.asyncio

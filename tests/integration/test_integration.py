@@ -12,10 +12,10 @@ import pytest
 # Add the project root directory to Python path
 sys.path.append(str(Path(__file__).parent.parent.parent))
 
-from client.auth import AuthClient
-from client.checkin import CheckinClient
-from client.search import SearchClient
-from models.auth import TraktAuthToken
+from trakt_mcp_server.client.auth import AuthClient
+from trakt_mcp_server.client.checkin import CheckinClient
+from trakt_mcp_server.client.search import SearchClient
+from trakt_mcp_server.models.auth import TraktAuthToken
 
 if TYPE_CHECKING:
     from models.types import (

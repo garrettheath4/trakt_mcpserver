@@ -5,7 +5,7 @@ from typing import TYPE_CHECKING
 import pytest
 from pydantic import ValidationError
 
-from models.auth import TraktAuthToken, TraktDeviceCode
+from trakt_mcp_server.models.auth import TraktAuthToken, TraktDeviceCode
 
 if TYPE_CHECKING:
     from tests.models.test_data_types import AuthTokenTestData, DeviceCodeTestData

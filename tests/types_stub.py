@@ -2,8 +2,8 @@
 
 from typing import Any, Protocol
 
-from models.auth import TraktAuthToken, TraktDeviceCode
-from utils.api.structured_logging import LogRecordExtended as BaseLogRecordExtended
+from trakt_mcp_server.models.auth import TraktAuthToken, TraktDeviceCode
+from trakt_mcp_server.utils.api.structured_logging import LogRecordExtended as BaseLogRecordExtended
 
 
 class LogRecordExtended(BaseLogRecordExtended):

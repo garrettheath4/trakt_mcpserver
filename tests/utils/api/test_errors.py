@@ -7,13 +7,13 @@ from unittest.mock import AsyncMock, MagicMock
 import httpx
 import pytest
 
-from utils.api.error_types import (
+from trakt_mcp_server.utils.api.error_types import (
     AuthenticationRequiredError,
     TraktRateLimitError,
     TraktResourceNotFoundError,
     TraktServerError,
 )
-from utils.api.errors import (
+from trakt_mcp_server.utils.api.errors import (
     InternalError,
     InvalidParamsError,
     handle_api_errors,

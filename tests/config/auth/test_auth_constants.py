@@ -1,6 +1,6 @@
 """Tests for auth constants module."""
 
-from config.auth.constants import (
+from trakt_mcp_server.config.auth.constants import (
     AUTH_EXPIRATION,
     AUTH_POLL_INTERVAL,
     AUTH_VERIFICATION_URL,

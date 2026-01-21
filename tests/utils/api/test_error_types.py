@@ -4,7 +4,7 @@ from typing import TYPE_CHECKING, cast
 
 if TYPE_CHECKING:
     from tests.types_stub import MCPErrorWithData
-from utils.api.error_types import (
+from trakt_mcp_server.utils.api.error_types import (
     AuthenticationRequiredError,
     AuthorizationPendingError,
     TraktAPIError,
@@ -13,7 +13,7 @@ from utils.api.error_types import (
     TraktServerError,
     TraktValidationError,
 )
-from utils.api.errors import InvalidParamsError, InvalidRequestError, MCPError
+from trakt_mcp_server.utils.api.errors import InvalidParamsError, InvalidRequestError, MCPError
 
 
 class TestTraktAPIError:

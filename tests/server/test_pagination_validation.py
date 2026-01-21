@@ -7,8 +7,8 @@ since limit=0 means "fetch all" which requires auto-pagination (page=None).
 import pytest
 from pydantic import ValidationError
 
-from server.base import LimitOnly, PeriodParams
-from server.search.tools import QueryParam
+from trakt_mcp_server.server.base import LimitOnly, PeriodParams
+from trakt_mcp_server.server.search.tools import QueryParam
 
 
 class TestLimitOnlyValidation:

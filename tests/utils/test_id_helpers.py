@@ -2,7 +2,7 @@
 
 import pytest
 
-from utils.api.id_helpers import build_trakt_id_object
+from trakt_mcp_server.utils.api.id_helpers import build_trakt_id_object
 
 
 class TestBuildTraktIdObject:

@@ -1,6 +1,6 @@
 """Tests for search formatter module."""
 
-from models.formatters.search import SearchFormatters
+from trakt_mcp_server.models.formatters.search import SearchFormatters
 
 
 class TestSearchFormatters:

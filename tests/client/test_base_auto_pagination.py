@@ -6,7 +6,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-from client.base import BaseClient
+from trakt_mcp_server.client.base import BaseClient
 
 
 class MockResponseItem(TypedDict):

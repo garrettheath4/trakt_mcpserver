@@ -1,8 +1,8 @@
 """Integration tests for config MCP direct imports."""
 
 # Test imports from domain-specific config modules
-from config.mcp.resources import MCP_RESOURCES
-from config.mcp.tools import TOOL_NAMES
+from trakt_mcp_server.config.mcp.resources import MCP_RESOURCES
+from trakt_mcp_server.config.mcp.tools import TOOL_NAMES
 
 
 class TestMcpResources:

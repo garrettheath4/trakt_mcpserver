@@ -4,9 +4,9 @@ from unittest.mock import AsyncMock, patch
 
 import pytest
 
-from models.types.api_responses import CheckinResponse
-from server.checkin.tools import checkin_to_show
-from utils.api.error_types import (
+from trakt_mcp_server.models.types.api_responses import CheckinResponse
+from trakt_mcp_server.server.checkin.tools import checkin_to_show
+from trakt_mcp_server.utils.api.error_types import (
     AuthenticationRequiredError,
     InvalidParamsError,
 )

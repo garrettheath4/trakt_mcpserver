@@ -2,7 +2,7 @@
 
 import pytest
 
-from config.api.constants import (
+from trakt_mcp_server.config.api.constants import (
     DEFAULT_FETCH_ALL_LIMIT,
     DEFAULT_LIMIT,
     MAX_API_PAGE_SIZE,

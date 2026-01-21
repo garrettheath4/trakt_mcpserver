@@ -4,7 +4,7 @@ from typing import Any
 
 import pytest
 
-from utils.api.responses import format_error_response
+from trakt_mcp_server.utils.api.responses import format_error_response
 
 
 class TestFormatErrorResponse:

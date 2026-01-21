@@ -1,6 +1,6 @@
 """Tests for checkin endpoints module."""
 
-from config.endpoints.checkin import CHECKIN_ENDPOINTS
+from trakt_mcp_server.config.endpoints.checkin import CHECKIN_ENDPOINTS
 
 
 class TestCheckinEndpoints:

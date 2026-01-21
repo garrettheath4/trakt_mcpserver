@@ -1,8 +1,8 @@
 """Integration tests for config constants direct imports."""
 
 # Test imports from domain-specific config modules
-from config.api import DEFAULT_LIMIT
-from config.auth import AUTH_EXPIRATION, AUTH_POLL_INTERVAL, AUTH_VERIFICATION_URL
+from trakt_mcp_server.config.api import DEFAULT_LIMIT
+from trakt_mcp_server.config.auth import AUTH_EXPIRATION, AUTH_POLL_INTERVAL, AUTH_VERIFICATION_URL
 
 
 class TestDirectImports:

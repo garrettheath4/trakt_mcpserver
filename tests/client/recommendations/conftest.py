@@ -2,8 +2,8 @@
 
 import pytest
 
-from client.recommendations import RecommendationsClient
-from models.auth import TraktAuthToken
+from trakt_mcp_server.client.recommendations import RecommendationsClient
+from trakt_mcp_server.models.auth import TraktAuthToken
 
 
 @pytest.fixture

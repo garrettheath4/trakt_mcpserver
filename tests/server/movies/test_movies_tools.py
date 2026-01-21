@@ -8,18 +8,18 @@ import pytest
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
-from config.api import DEFAULT_MAX_PAGES
-from server.comments.tools import fetch_movie_comments
-from server.movies.tools import (
+from trakt_mcp_server.config.api import DEFAULT_MAX_PAGES
+from trakt_mcp_server.server.comments.tools import fetch_movie_comments
+from trakt_mcp_server.server.movies.tools import (
     fetch_movie_ratings,
     fetch_movie_summary,
     fetch_movie_videos,
     fetch_trending_movies,
 )
-from utils.api.error_types import (
+from trakt_mcp_server.utils.api.error_types import (
     TraktResourceNotFoundError,
 )
-from utils.api.errors import InternalError
+from trakt_mcp_server.utils.api.errors import InternalError
 
 
 @pytest.mark.asyncio

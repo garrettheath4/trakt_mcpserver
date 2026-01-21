@@ -9,7 +9,7 @@ import pytest
 # Add the project root directory to Python path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
-from server.user.resources import get_user_watched_movies, get_user_watched_shows
+from trakt_mcp_server.server.user.resources import get_user_watched_movies, get_user_watched_shows
 
 
 @pytest.mark.asyncio

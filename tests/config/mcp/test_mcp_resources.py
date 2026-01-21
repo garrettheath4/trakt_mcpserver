@@ -1,6 +1,6 @@
 """Tests for MCP resources module."""
 
-from config.mcp.resources import MCP_RESOURCES
+from trakt_mcp_server.config.mcp.resources import MCP_RESOURCES
 
 
 class TestMcpResources:

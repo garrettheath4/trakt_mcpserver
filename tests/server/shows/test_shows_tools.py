@@ -6,13 +6,13 @@ import pytest
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
-from config.api import DEFAULT_MAX_PAGES
-from server.comments.tools import (
+from trakt_mcp_server.config.api import DEFAULT_MAX_PAGES
+from trakt_mcp_server.server.comments.tools import (
     fetch_episode_comments,
     fetch_season_comments,
     fetch_show_comments,
 )
-from server.shows.tools import (
+from trakt_mcp_server.server.shows.tools import (
     fetch_favorited_shows,
     fetch_played_shows,
     fetch_popular_shows,
@@ -22,10 +22,10 @@ from server.shows.tools import (
     fetch_trending_shows,
     fetch_watched_shows,
 )
-from utils.api.error_types import (
+from trakt_mcp_server.utils.api.error_types import (
     TraktResourceNotFoundError,
 )
-from utils.api.errors import InternalError
+from trakt_mcp_server.utils.api.errors import InternalError
 
 
 @pytest.mark.asyncio

@@ -11,8 +11,8 @@ import pytest
 # Add the project root directory to Python path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
-from server.search.tools import search_movies, search_shows
-from utils.api.errors import InternalError
+from trakt_mcp_server.server.search.tools import search_movies, search_shows
+from trakt_mcp_server.utils.api.errors import InternalError
 
 
 @pytest.mark.asyncio

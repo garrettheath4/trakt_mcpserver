@@ -5,7 +5,7 @@ import uuid
 
 import pytest
 
-from utils.api.request_context import (
+from trakt_mcp_server.utils.api.request_context import (
     RequestContext,
     add_context_to_error_data,
     clear_current_context,

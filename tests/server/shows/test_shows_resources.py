@@ -9,7 +9,7 @@ import pytest
 # Add the project root directory to Python path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
-from server.shows.resources import (
+from trakt_mcp_server.server.shows.resources import (
     get_favorited_shows,
     get_played_shows,
     get_popular_shows,
@@ -17,7 +17,7 @@ from server.shows.resources import (
     get_trending_shows,
     get_watched_shows,
 )
-from utils.api.errors import InternalError
+from trakt_mcp_server.utils.api.errors import InternalError
 
 
 @pytest.mark.asyncio

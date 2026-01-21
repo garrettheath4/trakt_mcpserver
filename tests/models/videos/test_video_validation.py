@@ -3,7 +3,7 @@
 import pytest
 from pydantic import ValidationError
 
-from models.videos.video import ValidatedVideo
+from trakt_mcp_server.models.videos.video import ValidatedVideo
 
 
 class TestValidatedVideo:

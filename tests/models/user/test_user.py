@@ -8,8 +8,8 @@ from typing import TYPE_CHECKING
 import pytest
 from pydantic import ValidationError
 
-from models.shows.show import TraktShow
-from models.user import TraktUserShow
+from trakt_mcp_server.models.shows.show import TraktShow
+from trakt_mcp_server.models.user import TraktUserShow
 
 if TYPE_CHECKING:
     from models.types.api_responses import UserWatchedShow

@@ -1,6 +1,6 @@
 """Tests for user endpoints module."""
 
-from config.endpoints.user import USER_ENDPOINTS
+from trakt_mcp_server.config.endpoints.user import USER_ENDPOINTS
 
 
 class TestUserEndpoints:

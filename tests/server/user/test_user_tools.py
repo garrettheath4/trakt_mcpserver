@@ -6,11 +6,11 @@ from unittest.mock import patch
 
 import pytest
 
-from utils.api.error_types import AuthenticationRequiredError
+from trakt_mcp_server.utils.api.error_types import AuthenticationRequiredError
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
-from server.user.tools import fetch_user_watched_movies, fetch_user_watched_shows
+from trakt_mcp_server.server.user.tools import fetch_user_watched_movies, fetch_user_watched_shows
 
 
 @pytest.mark.asyncio

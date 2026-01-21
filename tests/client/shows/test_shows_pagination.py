@@ -5,10 +5,10 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-from client.shows.popular import PopularShowsClient
-from client.shows.stats import ShowStatsClient
-from client.shows.trending import TrendingShowsClient
-from models.types.pagination import PaginatedResponse
+from trakt_mcp_server.client.shows.popular import PopularShowsClient
+from trakt_mcp_server.client.shows.stats import ShowStatsClient
+from trakt_mcp_server.client.shows.trending import TrendingShowsClient
+from trakt_mcp_server.models.types.pagination import PaginatedResponse
 
 
 @pytest.mark.asyncio

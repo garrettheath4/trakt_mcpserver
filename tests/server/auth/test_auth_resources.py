@@ -7,7 +7,7 @@ import pytest
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
-from server.auth.resources import get_auth_status
+from trakt_mcp_server.server.auth.resources import get_auth_status
 
 
 @pytest.mark.asyncio

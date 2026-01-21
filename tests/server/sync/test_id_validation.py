@@ -5,7 +5,7 @@ from unittest.mock import AsyncMock, patch
 import pytest
 from pydantic import ValidationError
 
-from server.sync.tools import (
+from trakt_mcp_server.server.sync.tools import (
     UserRatingIdentifier,
     UserRatingRequestItem,
     UserWatchlistIdentifier,

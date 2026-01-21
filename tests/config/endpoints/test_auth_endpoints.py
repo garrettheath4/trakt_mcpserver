@@ -1,6 +1,6 @@
 """Tests for auth endpoints module."""
 
-from config.endpoints.auth import AUTH_ENDPOINTS
+from trakt_mcp_server.config.endpoints.auth import AUTH_ENDPOINTS
 
 
 class TestAuthEndpoints:

@@ -1,7 +1,7 @@
 """Integration tests for config endpoints direct imports."""
 
 # Test imports from domain-specific config modules
-from config.endpoints import TRAKT_ENDPOINTS
+from trakt_mcp_server.config.endpoints import TRAKT_ENDPOINTS
 
 
 class TestTraktEndpoints:

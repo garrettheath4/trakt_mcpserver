@@ -6,9 +6,9 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import pytest
 import pytest_asyncio
 
-from models.auth import TraktDeviceCode
-from server.auth.tools import check_auth_status, start_device_auth
-from utils.api.error_types import AuthorizationPendingError
+from trakt_mcp_server.models.auth import TraktDeviceCode
+from trakt_mcp_server.server.auth.tools import check_auth_status, start_device_auth
+from trakt_mcp_server.utils.api.error_types import AuthorizationPendingError
 
 
 class TestAuthFlowThreadSafety:

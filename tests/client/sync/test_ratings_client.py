@@ -6,23 +6,23 @@ from unittest.mock import patch
 import httpx
 import pytest
 
-from client.sync.client import SyncClient
-from client.sync.ratings_client import SyncRatingsClient
-from models.auth.auth import TraktAuthToken
-from models.movies.movie import TraktMovie
-from models.shows.show import TraktShow
-from models.sync.ratings import (
+from trakt_mcp_server.client.sync.client import SyncClient
+from trakt_mcp_server.client.sync.ratings_client import SyncRatingsClient
+from trakt_mcp_server.models.auth.auth import TraktAuthToken
+from trakt_mcp_server.models.movies.movie import TraktMovie
+from trakt_mcp_server.models.shows.show import TraktShow
+from trakt_mcp_server.models.sync.ratings import (
     SyncRatingsSummary,
     TraktSyncRating,
     TraktSyncRatingItem,
     TraktSyncRatingsRequest,
 )
-from models.types.pagination import (
+from trakt_mcp_server.models.types.pagination import (
     PaginatedResponse,
     PaginationMetadata,
     PaginationParams,
 )
-from utils.api.error_types import TraktResourceNotFoundError
+from trakt_mcp_server.utils.api.error_types import TraktResourceNotFoundError
 
 # Sample API response data based on USER_RATINGS_DOC.MD
 SAMPLE_MOVIE_RATINGS_RESPONSE = [

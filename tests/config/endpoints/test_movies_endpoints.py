@@ -1,6 +1,6 @@
 """Tests for movies endpoints module."""
 
-from config.endpoints.movies import MOVIES_ENDPOINTS
+from trakt_mcp_server.config.endpoints.movies import MOVIES_ENDPOINTS
 
 
 class TestMoviesEndpoints:

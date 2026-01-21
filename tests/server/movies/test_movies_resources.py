@@ -9,7 +9,7 @@ import pytest
 # Add the project root directory to Python path
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
-from server.movies.resources import (
+from trakt_mcp_server.server.movies.resources import (
     get_movie_ratings,
     get_popular_movies,
     get_trending_movies,

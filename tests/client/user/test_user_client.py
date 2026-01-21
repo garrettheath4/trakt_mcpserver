@@ -2,7 +2,7 @@
 
 import pytest
 
-from client.user import UserClient
+from trakt_mcp_server.client.user import UserClient
 
 
 @pytest.mark.asyncio

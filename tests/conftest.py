@@ -10,18 +10,18 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import pytest
 
 if TYPE_CHECKING:
-    from client.sync.client import SyncClient
-    from models.auth.auth import TraktAuthToken
+    from trakt_mcp_server.client.sync.client import SyncClient
+    from trakt_mcp_server.models.auth.auth import TraktAuthToken
 
-# Add project root to path - more explicit approach
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-if project_root not in sys.path:
-    sys.path.insert(0, project_root)
+# Add src directory to path for imports
+src_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "src"))
+if src_dir not in sys.path:
+    sys.path.insert(0, src_dir)
 
-# Also add project root using pathlib as backup
-project_root_pathlib = str(Path(__file__).parent.parent.resolve())
-if project_root_pathlib not in sys.path:
-    sys.path.insert(0, project_root_pathlib)
+# Also add src using pathlib as backup
+src_dir_pathlib = str(Path(__file__).parent.parent / "src")
+if src_dir_pathlib not in sys.path:
+    sys.path.insert(0, src_dir_pathlib)
 
 
 @pytest.fixture
@@ -75,7 +75,7 @@ def patched_httpx_client(
 @pytest.fixture
 def mock_auth_token():
     """Create a mock auth token for testing."""
-    from models.auth import TraktAuthToken
+    from trakt_mcp_server.models.auth import TraktAuthToken
 
     return TraktAuthToken(
         access_token="mock_access_token",
@@ -92,7 +92,7 @@ def authenticated_sync_client(
     mock_auth_token: "TraktAuthToken",
 ) -> Generator["SyncClient", None, None]:
     """Create an authenticated sync client for testing."""
-    from client.sync.client import SyncClient
+    from trakt_mcp_server.client.sync.client import SyncClient
 
     client = SyncClient()
     client.auth_token = mock_auth_token

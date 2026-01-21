@@ -1,6 +1,6 @@
 """Tests for comments formatter module."""
 
-from models.formatters.comments import CommentsFormatters
+from trakt_mcp_server.models.formatters.comments import CommentsFormatters
 
 
 class TestCommentsFormatters:

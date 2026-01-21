@@ -6,8 +6,8 @@ from unittest.mock import patch
 
 import pytest
 
-from config.api import DEFAULT_MAX_PAGES
-from server.comments.tools import (
+from trakt_mcp_server.config.api import DEFAULT_MAX_PAGES
+from trakt_mcp_server.server.comments.tools import (
     fetch_comment,
     fetch_comment_replies,
     fetch_episode_comments,
@@ -15,7 +15,7 @@ from server.comments.tools import (
     fetch_season_comments,
     fetch_show_comments,
 )
-from utils.api.error_types import (
+from trakt_mcp_server.utils.api.error_types import (
     TraktResourceNotFoundError,
 )
 

@@ -3,7 +3,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-from client.movies import MoviesClient
+from trakt_mcp_server.client.movies import MoviesClient
 
 
 @pytest.mark.asyncio

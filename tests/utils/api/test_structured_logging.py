@@ -9,12 +9,12 @@ from typing import TYPE_CHECKING, cast
 if TYPE_CHECKING:
     from tests.types_stub import LogRecordExtended
 
-from utils.api.request_context import (
+from trakt_mcp_server.utils.api.request_context import (
     RequestContext,
     clear_current_context,
     set_current_context,
 )
-from utils.api.structured_logging import (
+from trakt_mcp_server.utils.api.structured_logging import (
     ContextFilter,
     StructuredFormatter,
     get_structured_logger,

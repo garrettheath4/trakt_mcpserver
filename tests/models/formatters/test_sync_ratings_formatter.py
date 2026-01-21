@@ -4,12 +4,12 @@ from __future__ import annotations
 
 from datetime import datetime
 
-from models.formatters.sync_ratings import SyncRatingsFormatters
-from models.movies.movie import TraktMovie
-from models.shows.episode import TraktEpisode
-from models.shows.show import TraktShow
-from models.sync.ratings import TraktSeason, TraktSyncRating
-from models.types.pagination import PaginatedResponse, PaginationMetadata
+from trakt_mcp_server.models.formatters.sync_ratings import SyncRatingsFormatters
+from trakt_mcp_server.models.movies.movie import TraktMovie
+from trakt_mcp_server.models.shows.episode import TraktEpisode
+from trakt_mcp_server.models.shows.show import TraktShow
+from trakt_mcp_server.models.sync.ratings import TraktSeason, TraktSyncRating
+from trakt_mcp_server.models.types.pagination import PaginatedResponse, PaginationMetadata
 
 
 class TestSyncRatingsFormatters:

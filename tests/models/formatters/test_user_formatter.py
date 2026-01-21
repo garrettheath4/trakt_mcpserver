@@ -1,6 +1,6 @@
 """Tests for user formatter module."""
 
-from models.formatters.user import UserFormatters
+from trakt_mcp_server.models.formatters.user import UserFormatters
 
 
 class TestUserFormatters:

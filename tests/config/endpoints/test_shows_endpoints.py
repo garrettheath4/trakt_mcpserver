@@ -1,6 +1,6 @@
 """Tests for shows endpoints module."""
 
-from config.endpoints.shows import SHOWS_ENDPOINTS
+from trakt_mcp_server.config.endpoints.shows import SHOWS_ENDPOINTS
 
 
 class TestShowsEndpoints:

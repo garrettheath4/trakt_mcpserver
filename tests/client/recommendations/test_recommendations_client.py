@@ -6,8 +6,8 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-from client.recommendations import RecommendationsClient
-from utils.api.error_types import AuthenticationRequiredError
+from trakt_mcp_server.client.recommendations import RecommendationsClient
+from trakt_mcp_server.utils.api.error_types import AuthenticationRequiredError
 
 if TYPE_CHECKING:
     from models.recommendations.recommendation import (

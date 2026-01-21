@@ -1,6 +1,6 @@
 """Tests for comments endpoints module."""
 
-from config.endpoints.comments import COMMENTS_ENDPOINTS
+from trakt_mcp_server.config.endpoints.comments import COMMENTS_ENDPOINTS
 
 
 class TestCommentsEndpoints:

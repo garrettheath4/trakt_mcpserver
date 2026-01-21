@@ -7,8 +7,8 @@ from unittest.mock import MagicMock, patch
 import httpx
 import pytest
 
-from utils.api.error_handler import TraktAPIErrorHandler, create_correlation_id
-from utils.api.error_types import (
+from trakt_mcp_server.utils.api.error_handler import TraktAPIErrorHandler, create_correlation_id
+from trakt_mcp_server.utils.api.error_types import (
     AuthenticationRequiredError,
     AuthorizationPendingError,
     TraktRateLimitError,
@@ -16,7 +16,7 @@ from utils.api.error_types import (
     TraktServerError,
     TraktValidationError,
 )
-from utils.api.errors import InternalError, InvalidParamsError, InvalidRequestError
+from trakt_mcp_server.utils.api.errors import InternalError, InvalidParamsError, InvalidRequestError
 
 
 class TestTraktAPIErrorHandler:

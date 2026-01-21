@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING, Any, cast
 
-from models.formatters.movies import MovieFormatters
+from trakt_mcp_server.models.formatters.movies import MovieFormatters
 
 if TYPE_CHECKING:
     from models.types.api_responses import MovieResponse, TrendingWrapper

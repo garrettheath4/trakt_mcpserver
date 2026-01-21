@@ -2,7 +2,7 @@
 
 from typing import get_type_hints
 
-from models.types import (
+from trakt_mcp_server.models.types import (
     AuthClientProtocol,
     CheckinResponse,
     CommentResponse,

@@ -8,8 +8,8 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-from client.sync.client import SyncClient
-from server.sync.tools import UserRatingIdentifier, UserRatingRequestItem
+from trakt_mcp_server.client.sync.client import SyncClient
+from trakt_mcp_server.server.sync.tools import UserRatingIdentifier, UserRatingRequestItem
 
 # TYPE_CHECKING imports removed as not actually used in runtime
 

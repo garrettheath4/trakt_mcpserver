@@ -4,14 +4,14 @@ from typing import Any
 
 import pytest
 
-from server.base.error_mixin import (
+from trakt_mcp_server.server.base.error_mixin import (
     BaseToolErrorMixin,
     is_sensitive_key,
     sanitize_args,
     sanitize_kwargs,
     sanitize_value,
 )
-from utils.api.errors import InternalError
+from trakt_mcp_server.utils.api.errors import InternalError
 
 
 class TestSanitizationFunctions:

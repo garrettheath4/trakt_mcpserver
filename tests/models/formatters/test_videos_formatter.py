@@ -6,7 +6,7 @@ from typing import TYPE_CHECKING, Any, cast
 
 import pytest
 
-from models.formatters.videos import VideoFormatters
+from trakt_mcp_server.models.formatters.videos import VideoFormatters
 
 if TYPE_CHECKING:
     from models.types.api_responses import VideoResponse, VideoSite, VideoType

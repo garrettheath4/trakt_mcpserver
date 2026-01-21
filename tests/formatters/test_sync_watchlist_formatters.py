@@ -2,11 +2,11 @@
 
 from datetime import datetime
 
-from models.formatters.sync_watchlist import SyncWatchlistFormatters
-from models.movies.movie import TraktMovie
-from models.shows.episode import TraktEpisode
-from models.shows.show import TraktShow
-from models.sync.watchlist import (
+from trakt_mcp_server.models.formatters.sync_watchlist import SyncWatchlistFormatters
+from trakt_mcp_server.models.movies.movie import TraktMovie
+from trakt_mcp_server.models.shows.episode import TraktEpisode
+from trakt_mcp_server.models.shows.show import TraktShow
+from trakt_mcp_server.models.sync.watchlist import (
     SyncWatchlistNotFound,
     SyncWatchlistSummary,
     SyncWatchlistSummaryCount,
@@ -14,7 +14,7 @@ from models.sync.watchlist import (
     TraktSyncWatchlistItem,
     TraktWatchlistItem,
 )
-from models.types.pagination import PaginatedResponse, PaginationMetadata
+from trakt_mcp_server.models.types.pagination import PaginatedResponse, PaginationMetadata
 
 
 class TestSyncWatchlistFormatters:

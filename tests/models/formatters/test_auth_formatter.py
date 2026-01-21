@@ -1,6 +1,6 @@
 """Tests for auth formatter module."""
 
-from models.formatters.auth import AuthFormatters
+from trakt_mcp_server.models.formatters.auth import AuthFormatters
 
 
 class TestAuthFormatters:

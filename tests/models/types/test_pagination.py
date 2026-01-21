@@ -5,8 +5,8 @@ from typing import Any
 import pytest
 from pydantic import ValidationError
 
-from config.api import DEFAULT_LIMIT
-from models.types.pagination import (
+from trakt_mcp_server.config.api import DEFAULT_LIMIT
+from trakt_mcp_server.models.types.pagination import (
     PaginatedResponse,
     PaginationMetadata,
     PaginationParams,

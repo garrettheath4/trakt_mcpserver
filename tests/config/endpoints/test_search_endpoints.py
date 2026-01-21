@@ -1,6 +1,6 @@
 """Tests for search endpoints module."""
 
-from config.endpoints.search import SEARCH_ENDPOINTS
+from trakt_mcp_server.config.endpoints.search import SEARCH_ENDPOINTS
 
 
 class TestSearchEndpoints:

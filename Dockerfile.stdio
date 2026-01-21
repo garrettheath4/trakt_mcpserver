@@ -15,12 +15,9 @@ RUN groupadd -g 1000 appuser && \
 # Workdir
 WORKDIR /app
 
-# Copy and install dependencies first (better layer caching)
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy project (everything except what's in .dockerignore)
+# Copy project and install the package (includes dependencies from pyproject.toml)
 COPY . .
+RUN pip install --no-cache-dir .
 
 # Environment variables (can be overridden at runtime)
 ENV TRAKT_CLIENT_ID=""
@@ -36,4 +33,4 @@ USER appuser
 # No healthcheck - can't curl stdio transport
 
 # Run the MCP server directly (uses stdio transport by default)
-ENTRYPOINT ["python", "server.py"]
+ENTRYPOINT ["trakt-mcp"]

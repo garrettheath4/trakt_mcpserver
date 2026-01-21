@@ -6,13 +6,13 @@ from unittest.mock import patch
 import httpx
 import pytest
 
-from client.sync.client import SyncClient
-from client.sync.watchlist_client import SyncWatchlistClient
-from models.auth.auth import TraktAuthToken
-from models.movies.movie import TraktMovie
-from models.shows.episode import TraktEpisode
-from models.shows.show import TraktShow
-from models.sync.watchlist import (
+from trakt_mcp_server.client.sync.client import SyncClient
+from trakt_mcp_server.client.sync.watchlist_client import SyncWatchlistClient
+from trakt_mcp_server.models.auth.auth import TraktAuthToken
+from trakt_mcp_server.models.movies.movie import TraktMovie
+from trakt_mcp_server.models.shows.episode import TraktEpisode
+from trakt_mcp_server.models.shows.show import TraktShow
+from trakt_mcp_server.models.sync.watchlist import (
     SyncWatchlistNotFound,
     SyncWatchlistSummary,
     SyncWatchlistSummaryCount,
@@ -20,12 +20,12 @@ from models.sync.watchlist import (
     TraktSyncWatchlistRequest,
     TraktWatchlistItem,
 )
-from models.types.pagination import (
+from trakt_mcp_server.models.types.pagination import (
     PaginatedResponse,
     PaginationMetadata,
     PaginationParams,
 )
-from utils.api.error_types import TraktResourceNotFoundError
+from trakt_mcp_server.utils.api.error_types import TraktResourceNotFoundError
 
 # Sample API response data for watchlist items
 SAMPLE_MOVIE_WATCHLIST_RESPONSE = [

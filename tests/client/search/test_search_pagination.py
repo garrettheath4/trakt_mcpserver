@@ -5,8 +5,8 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
-from client.search.client import SearchClient
-from models.types.pagination import PaginatedResponse
+from trakt_mcp_server.client.search.client import SearchClient
+from trakt_mcp_server.models.types.pagination import PaginatedResponse
 
 
 @pytest.mark.asyncio

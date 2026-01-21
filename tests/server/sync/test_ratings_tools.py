@@ -9,17 +9,17 @@ import pytest
 
 sys.path.append(str(Path(__file__).parent.parent.parent.parent))
 
-from models.movies.movie import TraktMovie
-from models.sync.ratings import TraktSyncRating
-from server.sync.tools import (
+from trakt_mcp_server.models.movies.movie import TraktMovie
+from trakt_mcp_server.models.sync.ratings import TraktSyncRating
+from trakt_mcp_server.server.sync.tools import (
     UserRatingIdentifier,
     UserRatingRequestItem,
     add_user_ratings,
     fetch_user_ratings,
     remove_user_ratings,
 )
-from utils.api.error_types import TraktResourceNotFoundError
-from utils.api.errors import InternalError
+from trakt_mcp_server.utils.api.error_types import TraktResourceNotFoundError
+from trakt_mcp_server.utils.api.errors import InternalError
 
 # (Intentionally left blank: inline pydantic objects are constructed per test)
 

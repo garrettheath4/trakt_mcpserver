@@ -1,6 +1,6 @@
 """Tests for MCP tools module."""
 
-from config.mcp.tools import TOOL_NAMES
+from trakt_mcp_server.config.mcp.tools import TOOL_NAMES
 
 
 class TestToolNames:
