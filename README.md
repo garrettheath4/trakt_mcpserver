@@ -75,7 +75,7 @@ docker run -d --rm --name trakt_mcpserver \
    export TRAKT_CLIENT_SECRET=your_client_secret
    
    # Run from GitHub
-   pipx run --spec git+https://github.com/yourusername/mcp-trakt.git trakt-mcp
+   pipx run --spec git+https://github.com/garrettheath4/trakt_mcpserver.git trakt-mcp
    ```
 
 5. **Once published to PyPI** (coming soon)
