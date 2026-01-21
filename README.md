@@ -68,9 +68,14 @@ docker run -d --rm --name trakt_mcpserver \
    pipx run --spec . trakt-mcp
    ```
 
-4. **Or install and run directly from GitHub**
+4. **Or run directly from GitHub** (once published)
    ```bash
-   pipx run git+https://github.com/garrettheath4/cloudstorage-mcp.git
+   # Set credentials first
+   export TRAKT_CLIENT_ID=your_client_id
+   export TRAKT_CLIENT_SECRET=your_client_secret
+   
+   # Run from GitHub
+   pipx run --spec git+https://github.com/yourusername/mcp-trakt.git trakt-mcp
    ```
 
 5. **Once published to PyPI** (coming soon)
